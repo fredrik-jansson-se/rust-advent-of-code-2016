@@ -1,9 +1,11 @@
 extern crate regex;
 #[macro_use] extern crate lazy_static;
+extern crate astar;
 
 use std::env;
 
 mod day11;
+mod day13;
 mod day22;
 
 fn main() {
@@ -17,6 +19,7 @@ fn main() {
 
     match day {
         11 => day11::run(),
+        13 => day13::run(),
         22 => day22::run(),
         _ => ()
     }

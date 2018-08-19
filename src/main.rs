@@ -1,12 +1,14 @@
-extern crate regex;
-#[macro_use] extern crate lazy_static;
 extern crate astar;
+#[macro_use] extern crate lazy_static;
+extern crate permutohedron;
+extern crate regex;
 
 use std::env;
 
 mod day11;
 mod day13;
 mod day22;
+mod day24;
 
 fn main() {
     let mut a = env::args();
@@ -21,6 +23,7 @@ fn main() {
         11 => day11::run(),
         13 => day13::run(),
         22 => day22::run(),
+        24 => day24::run(),
         _ => ()
     }
 }

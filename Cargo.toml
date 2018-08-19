@@ -8,3 +8,5 @@ combine = "*"
 regex = "*"
 lazy_static = "*"
 astar = { path = "../astar" }
+permutate = "*"
+permutohedron = "*"
